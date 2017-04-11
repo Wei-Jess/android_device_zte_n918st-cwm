@@ -75,12 +75,10 @@ BOARD_HAS_LARGE_FILESYSTEM := true
 TARGET_USERIMAGES_USE_EXT4 := true
 
 # Recovery
-#RECOVERY_VARIANT := carliv
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.qcom.rc
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/recovery.fstab
 
-#BOARD_USE_CUSTOM_RECOVERY_FONT := \"font_18x38.h\"
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"fontcn30_18x48.h\"
 DEVICE_RESOLUTION := 720x1280
 DEVICE_SCREEN_WIDTH := 720
@@ -88,13 +86,10 @@ DEVICE_SCREEN_HEIGHT := 1280
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 TARGET_RECOVERY_LCD_BACKLIGHT_PATH := \"/sys/class/leds/lcd-backlight/brightness\"
 
-
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/zte/n918st/recovery/recovery_keys.c
 #BOARD_CUSTOM_GRAPHICS := ../../../device/zte/n918st/recovery/graphics.c
 BOARD_CUSTOM_GRAPHICS := ../../../device/zte/n918st/recovery/graphics_cn.c
-#BOARD_CUSTOM_GRAPHICS := ../../../device/zte/n918st/recovery/graphics.cwmt.c
-#BOARD_CUSTOM_GRAPHICS := ../../../device/zte/n918st/recovery/graphics.cwm.c
 
 #使用虚拟按键
 RECOVERY_USE_VIRTUAL_KEY := true
