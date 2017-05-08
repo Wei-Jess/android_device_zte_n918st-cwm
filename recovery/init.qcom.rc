@@ -44,7 +44,6 @@ on init
     mkdir /mnt/fuse 0700 root system
     mount tmpfs tmpfs /mnt/fuse mode=0775,gid=1000
 
-    mount_all fstab.qcom
     #load_persist_props
     setprop persist.service.cdrom.enable 0
     #setprop selinux.reload_policy 0
